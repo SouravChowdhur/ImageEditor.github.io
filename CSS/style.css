@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    display: grid;
+}
+.container{
+    width: 35%;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 0 0 10px rgb(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.container h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0;
+    font-size: 30px;
+}
+.view-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+}
+.view-image img{
+    height: 360px;
+    width: 400px;
+    object-fit: contain;
+}
+.choose-img button{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(93, 17, 234);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 750;
+    margin: 10px 0;
+    color: white;
+}
+.choose-img button img{
+    width: 35px;
+    
+}
+.slider{
+    width: 100%;
+    padding: 0 10px;
+}
+.slider input{
+    width: 100%;
+}
+.slider .filter-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons-filter{
+    padding: 10px;
+    width: 100%;
+    border: 2px solid rgb(211, 209, 209);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.icons-filter p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+}
+.icons-filter .icons-room{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons-filter .icons-room button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icons-filter .icons-room button img{
+    width: 20px;
+}
+.active{
+    background-color: rgb(173, 170, 222)! important;
+    border-radius: 50%;
+    padding: 6px;
+}
+.rotate-room{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons-filter .rotate-room button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icons-filter .rotate-room button img{
+    width: 20px;
+}
+.rotate-room button:last-child{
+    transform: rotate(90deg);
+}
+
+.button-container button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-container button:first-child{
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    color: rgb(93, 17, 234);
+    font-weight: 600;
+}
+.button-container button:last-child{
+    background-color: rgb(93, 17, 234);
+    color: white;
+}
+.button-container button:first-child:hover{
+    background-color: rgb(93, 17, 234);
+    color: white;
+    border: none;
+}
+.disabled .view-image{
+    pointer-events: none;
+    opacity: 0.5;
+}
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+.disabled .slider{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.disabled .icons-filter{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.disabled .button-container{
+    pointer-events: none;
+    opacity: 0.5;
+}
